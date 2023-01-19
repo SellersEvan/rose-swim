@@ -1,2 +1,11 @@
-# rose-swim
-Swim Team Managment Information for Rose-Hulman + Tau Beta Tau (TBT)
+# Rose-Hulman Swim Team Managment
+Rose-Hulman + Tau Beta Tau (TBT) Chalupa Chapter
+
+
+## Team Events
+
+
+
+
+
+
