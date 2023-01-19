@@ -86,3 +86,28 @@ body {
     overflow: auto;
 }
 
+.Treant .node.node-hidden {
+    display: none;
+}
+
+.Treant .node.node-dead {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.Treant .node.node-dead:hover {
+    opacity: 1;
+}
+
+.Treant .collapse-switch {
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    margin: 5px;
+    border-color: #F3CE5E;
+    border-width: 2px;
+}
+
+.Treant .collapsed .collapse-switch {
+    background-color: #F3CE5E;
+}

@@ -4,10 +4,25 @@ function generateNode(data) {
     return {
         "text": {
             "name": data["name"],
-            "year": (data["year"].length != 0) ? data["year"].join("-") : "N/A",
+            "year": data["year"].join("-"),
         },
+        "collapsable": true,
         "children": [],
     };
+}
+
+
+function hiddenNode(data, level) {
+    if (level <= 0) {
+        return data;
+    } else {
+        return {
+            "text": {},
+            "drawLineThrough": true,
+            "HTMLclass": "node-hidden",
+            "children": [hiddenNode(data, level - 1)]
+        };
+    }
 }
 
 
@@ -15,8 +30,17 @@ function generateLine(node, fatherID, lineage) {
     if (lineage[fatherID]["sons"].length != 0) {
         lineage[fatherID]["sons"].forEach((sonID) => {
             let sonNode = generateNode(lineage[sonID]);
-            node["children"].push(generateLine(sonNode, sonID, lineage));
+            let diff = lineage[sonID]["year"][0] - lineage[fatherID]["year"][0] - 1;
+            if (diff > 0) {
+                node["children"].push(hiddenNode(generateLine(sonNode, sonID, lineage), diff));
+            } else {
+                node["children"].push(generateLine(sonNode, sonID, lineage));
+            }
         });
+    } else {
+        if (lineage[fatherID]["year"][0] + 2 < new Date().getFullYear()) {
+            node["HTMLclass"] = "node-dead"
+        }
     }
     return node;
 }
