@@ -1,127 +1,53 @@
-var config = {
-    container: "#OrganiseChart1",
-    rootOrientation:  'NORTH', // NORTH || EAST || WEST || SOUTH
-    hideRootNode: true,
-    // levelSeparation: 30,
-    siblingSeparation:   40,
-    subTeeSeparation:    30,
-    
-    connectors: {
-        type: 'curve'
-    },
-    node: {
-        HTMLclass: 'nodeExample1'
-    }
-},
-root = {},
 
-cto = {
-    parent: root,
-    text:{
-        name: "Joe Linux",
-        title: "Board member",
-        contact: "email: we@aregreat.com"
-    },
-    stackChildren: true,
-    HTMLid: "coo"
-},
-cbo = {
-    parent: root,
-    stackChildren: true,
-    text:{
-        name: "Linda May",
-        title: "Board member",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "cbo"
-},
-cdo = {
-    parent: root,
-    text:{
-        name: "John Green",
-        title: "Board member, CEO",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "cdo"
-},
-cio = {
-    parent: cto,
-    text:{
-        name: "Ron Blomquist",
-        title: "Chief Information Security Officer",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "cio"
-},
-ciso = {
-    parent: cto,
-    text:{
-        name: "Michael Rubin",
-        title: "Chief Innovation Officer",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "ciso"
-},
-cio2 = {
-    parent: cdo,
-    text:{
-        name: "Erica Reel",
-        title: "Chief Customer Officer",
-        contact: "email: we@aregreat.com"
-    },
-    link: {
-        href: "www.google.com"
-    },
-    HTMLid: "cio2"
-},
-ciso2 = {
-    parent: cbo,
-    text:{
-        name: "Alice Lopez",
-        title: "Chief Communications Officer",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "ciso2"
-},
-ciso3 = {
-    parent: cbo,
-    text:{
-        name: "Mary Johnson",
-        title: "Chief Brand Officer",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "ciso2"
-},
-ciso4 = {
-    parent: cbo,
-    text:{
-        name: "Kirk Douglas",
-        title: "Chief Business Development Officer",
-        contact: "email: we@aregreat.com"
-    },
-    HTMLid: "ciso2"
-},
-ciso5 = {
-    parent: ciso4,
-    text:{
-        name: "Kirk Douglas 2",
-        title: "Chief Business Development Officer 2",
-        contact: "email: we@aregreat.com 2"
-    },
-    HTMLid: "ciso5"
+
+function generateNode(data) {
+    return {
+        "text": {
+            "name": data["name"],
+            "year": (data["year"].length != 0) ? data["year"].join("-") : "N/A",
+        },
+        "children": [],
+    };
 }
 
-ALTERNATIVE = [
-    config,
-    root,
-    cto,
-    cbo,
-    cdo,
-    cio,
-    ciso,
-    cio2,
-    ciso2,
-    ciso3,
-    ciso4,
-    ciso5
-];
+
+function generateLine(node, fatherID, lineage) {
+    if (lineage[fatherID]["sons"].length != 0) {
+        lineage[fatherID]["sons"].forEach((sonID) => {
+            let sonNode = generateNode(lineage[sonID]);
+            node["children"].push(generateLine(sonNode, sonID, lineage));
+        });
+    }
+    return node;
+}
+
+
+function generateChart(lineage) {
+    let nodes = { "children": [] };
+    NEW_LINES.forEach((fatherID) => {
+        let fatherNode = generateNode(lineage[fatherID]);
+        nodes["children"].push(generateLine(fatherNode, fatherID, lineage));
+    });
+    return nodes;
+};
+
+
+
+const CONFIG = {
+    chart: {
+        container: "#LineageChart",
+        rootOrientation:  "NORTH",
+        hideRootNode: true,
+        siblingSeparation: 40,
+        subTeeSeparation: 30,
+        connectors: {
+            "type": "curve",
+            "style": {
+                "stroke": "#EF1897",
+                "stroke-width": "2"
+            }
+        },
+    },
+    nodeStructure: generateChart(DATA)
+};
+
