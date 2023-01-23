@@ -1,4 +1,4 @@
-// Add New Memebers here
+// Add New Memebers here...
 // If you add a new line made sure to add the ID to the NEW_LINES array
 // Make sure each ID for the person is unique
 
