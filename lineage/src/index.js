@@ -46,9 +46,9 @@ function generateLine(node, fatherID, lineage) {
 }
 
 
-function generateChart(lineage) {
+function generateChart(lineage, mainLines) {
     let nodes = { "children": [] };
-    NEW_LINES.forEach((fatherID) => {
+    mainLines.forEach((fatherID) => {
         let fatherNode = generateNode(lineage[fatherID]);
         nodes["children"].push(generateLine(fatherNode, fatherID, lineage));
     });
@@ -72,6 +72,6 @@ const CONFIG = {
             }
         },
     },
-    nodeStructure: generateChart(DATA)
+    nodeStructure: generateChart(LINES, NEW_LINES)
 };
 

@@ -1,8 +1,19 @@
 // Add New Memebers here
 // If you add a new line made sure to add the ID to the NEW_LINES array
 // Make sure each ID for the person is unique
-const NEW_LINES = ["matt_schulstad", "dan_skirook", "alex_yaung", "nate_weber", "pat_king"];
-const DATA = {
+
+
+const NEW_LINES = [
+    "matt_schulstad",
+    "dan_skirook",
+    "alex_yaung",
+    "nate_weber",
+    "pat_king",
+    "pierce_bartine"
+];
+
+
+const LINES = {
 
     // LINE 1
     "matt_schulstad": {
@@ -71,6 +82,7 @@ const DATA = {
         "year": 2021,
         "sons": []
     },
+
 
     // LINE 2
     "dan_skirook": {
@@ -394,4 +406,63 @@ const DATA = {
     },
 
 
+    // LINE 6
+    "pierce_bartine": {
+        "name": "Pierce Bartine",
+        "year": 2014,
+        "sons": [
+            "nick_samra"
+        ]
+    },
+    "nick_samra": {
+        "name": "Nick Samra",
+        "year": 2015,
+        "sons": [
+            "austin_bockman",
+            "alex_adame",
+            "satya_arcot"
+        ]
+    },
+    "austin_bockman": {
+        "name": "Austin Bockman",
+        "year": 2016,
+        "sons": [
+            "cam_gill"
+        ]
+    },
+    "alex_adame": {
+        "name": "Alex Adame",
+        "year": 2017,
+        "sons": [
+            "austin_salisbury"
+        ]
+    },
+    "austin_salisbury": {
+        "name": "Austin Salisbury (Steak)",
+        "year": 2017,
+        "sons": []
+    },
+    "cam_gill": {
+        "name": "Cam Gill",
+        "year": 2017,
+        "sons": []
+    },
+    "satya_arcot": {
+        "name": "Satya Arcot",
+        "year": 2017,
+        "sons": [
+            "john_koopal",
+            "bryce_snaguski"
+        ]
+    },
+    "john_koopal": {
+        "name": "John Koopal",
+        "year": 2018,
+        "sons": []
+    },
+    "bryce_snaguski": {
+        "name": "Bryce Snaguski",
+        "year": 2018,
+        "sons": []
+    },
 };
