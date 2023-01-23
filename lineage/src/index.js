@@ -4,7 +4,7 @@ function generateNode(data) {
     return {
         "text": {
             "name": data["name"],
-            "year": data["year"].join("-"),
+            "year": "Joined " + data["year"],
         },
         "collapsable": true,
         "children": [],
@@ -30,7 +30,7 @@ function generateLine(node, fatherID, lineage) {
     if (lineage[fatherID]["sons"].length != 0) {
         lineage[fatherID]["sons"].forEach((sonID) => {
             let sonNode = generateNode(lineage[sonID]);
-            let diff = lineage[sonID]["year"][0] - lineage[fatherID]["year"][0] - 1;
+            let diff = lineage[sonID]["year"] - lineage[fatherID]["year"] - 1;
             if (diff > 0) {
                 node["children"].push(hiddenNode(generateLine(sonNode, sonID, lineage), diff));
             } else {
@@ -38,7 +38,7 @@ function generateLine(node, fatherID, lineage) {
             }
         });
     } else {
-        if (lineage[fatherID]["year"][0] + 2 < new Date().getFullYear()) {
+        if (lineage[fatherID]["year"] + 1 < new Date().getFullYear()) {
             node["HTMLclass"] = "node-dead"
         }
     }

@@ -87,7 +87,7 @@ body {
 }
 
 .Treant .node.node-hidden {
-    display: none;
+    opacity: 0;
 }
 
 .Treant .node.node-dead {
