@@ -18,7 +18,7 @@ const LINES = {
     // LINE 1
     "matt_schulstad": {
         "name": "Matt Schulstad",
-        "year": 2015,
+        "year": 2014,
         "sons": [
             "andrei_ghejan"
         ]
@@ -43,7 +43,8 @@ const LINES = {
         "year": 2018,
         "sons": [
             "scott_hennarty",
-            "logan_mcLaughlin"
+            "logan_mcLaughlin",
+            "nathan_j_neppl"
         ]
     },
     "scott_hennarty": {
@@ -62,7 +63,8 @@ const LINES = {
         "name": "Zach Eckstrom",
         "year": 2020,
         "sons": [
-            "tuan_tran"
+            "tuan_tran",
+            "matteo_calviello"
         ]
     },
     "tuan_tran": {
@@ -74,12 +76,28 @@ const LINES = {
         "name": "Evan Sellers",
         "year": 2020,
         "sons": [
-            "michael_carrabba"
+            "michael_carrabba",
+            "tommaso_calviello"
         ]
     },
     "michael_carrabba": {
         "name": "Michael Carrabba",
         "year": 2021,
+        "sons": []
+    },
+    "matteo_calviello": {
+        "name": "Matteo Calviello",
+        "year": 2022,
+        "sons": []
+    },
+    "tommaso_calviello": {
+        "name": "Tommaso Calviello",
+        "year": 2022,
+        "sons": []
+    },
+    "nathan_j_neppl": {
+        "name": "Nathan J Neppl",
+        "year": 2022,
         "sons": []
     },
 
@@ -132,7 +150,8 @@ const LINES = {
         "sons": [
             "ryan_nikolic",
             "will_hawkins",
-            "noah_lockhart"
+            "noah_lockhart",
+            "carter_kirtz"
         ]
     },
     "ryan_nikolic": {
@@ -155,6 +174,11 @@ const LINES = {
     "will_hawkins": {
         "name": "Will Hawkins",
         "year": 2020,
+        "sons": []
+    },
+    "carter_kirtz": {
+        "name": "Carter Kirtz",
+        "year": 2022,
         "sons": []
     },
 
@@ -231,6 +255,13 @@ const LINES = {
     "caleb_munger": {
         "name": "Caleb Munger",
         "year": 2021,
+        "sons": [
+            "anthony_hoyt"
+        ]
+    },
+    "anthony_hoyt": {
+        "name": "Anthony Hoyt",
+        "year": 2022,
         "sons": []
     },
 
@@ -308,11 +339,24 @@ const LINES = {
     "will_kenyon": {
         "name": "Will Kenyon",
         "year": 2021,
-        "sons": []
+        "sons": [
+            "aidan_carter",
+            "charlie_su"
+        ]
     },
     "anthony_napreev": {
         "name": "Anthony Napreev",
         "year": 2021,
+        "sons": []
+    },
+    "aidan_carter": {
+        "name": "Aidan Carter",
+        "year": 2022,
+        "sons": []
+    },
+    "charlie_su": {
+        "name": "Charlie Su",
+        "year": 2022,
         "sons": []
     },
 

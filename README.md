@@ -50,6 +50,9 @@ h1 { border: none; }
 
 ## Team Events/Parties
 
+### Weiner Ball
+
+### Cookout
 
 
 
@@ -63,3 +66,7 @@ First step is to ask current TBT memebers who would like to be a father. After t
 ### Updating Lineage
 After the bidding process is completed and fathers/sons are assigned, then just update the lineage tree. There is a file called `/lineage/src/lineage.js`, this is where new memebers will be added, instruction are within the file. Then download the figma template file in `/lineage/template.fig` which is an image of the current TBT members.
 
+<br>
+
+## Archive
+[Original TBT Tree Chart](https://drive.google.com/file/d/1L5NmEexqRSIvDGcGCOV5BmdiyZN79qXI/view)
