@@ -246,7 +246,7 @@ const LINES = {
         "sons": []
     },
     "ryan_cuda": {
-        "name": "Ryan Cude",
+        "name": "Ryan Cuda",
         "year": 2020,
         "sons": [
             "caleb_munger"
@@ -299,7 +299,10 @@ const LINES = {
     "vineet_ranade": {
         "name": "Vineet Ranade",
         "year": 2021,
-        "sons": []
+        "sons": [
+            "blaise_swartwood",
+            "brian_beasley"
+        ]
     },
     "zsolt_trukai": {
         "name": "Zsolt Trukai",
@@ -356,6 +359,16 @@ const LINES = {
     },
     "charlie_su": {
         "name": "Charlie Su",
+        "year": 2022,
+        "sons": []
+    },
+    "blaise_swartwood": {
+        "name": "Blaise Swartwood",
+        "year": 2022,
+        "sons": []
+    },
+    "brian_beasley": {
+        "name": "Brian Beasley",
         "year": 2022,
         "sons": []
     },

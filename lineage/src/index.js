@@ -6,7 +6,6 @@ function generateNode(data) {
             "name": data["name"],
             "year": "Joined " + data["year"],
         },
-        "collapsable": true,
         "children": [],
     };
 }
