@@ -64,7 +64,7 @@ Rush starts the second Tuesday after practice starts. All freshman are required 
 First step is to ask current TBT memebers who would like to be a father. After this a survay is created and sent to all the freshmen "bids" who will rank their choices for their father. Then each freshman is assigned to a father, keeping in mind their father is not always their best friend but someone to push them and ask for help from.
 
 ### Updating Lineage
-After the bidding process is completed and fathers/sons are assigned, then just update the lineage tree. There is a file called `/lineage/src/lineage.js`, this is where new memebers will be added, instruction are within the file. Then download the figma template file in `/lineage/template.fig` which is an image of the current TBT members.
+After the bidding process is completed and fathers/sons are assigned, then just update the lineage tree. There is a file called `/lineage/src/lineage.js`, this is where new memebers will be added, instruction are within the file. Then download the figma template file from the [links below](#links).
 
 <br>
 
