@@ -58,10 +58,10 @@ h1 { border: none; }
 
 ## TBT Induction Process
 ### Rushing 
-Rush starts the second Tuesday after practice starts. All freshman are required to attend the first TBT session. It is customary that the freshman are unaware of the activity they are going to and that upper classmen drive them to the first session. They are usually told to bring random items to confuse them. To receive a "bid" they must attend atleast one more session. The rushing process should be atleast 6 weeks.
+Rush starts the second Tuesday after practice starts. All freshman are required to attend the first TBT session. It is customary that the freshman are unaware of the activity they are going to and that upper classmen drive them to the first session. They are usually told to bring random items to confuse them. To receive a "bid" they must attend at least one more session. The rushing process should be at least 6 weeks.
 
 ### Bidding
-First step is to ask current TBT memebers who would like to be a father. After this a survay is created and sent to all the freshmen "bids" who will rank their choices for their father. Then each freshman is assigned to a father, keeping in mind their father is not always their best friend but someone to push them and ask for help from.
+First step is to ask current TBT members who would like to be a father. After this a survey is created and sent to all the freshmen "bids" who will rank their choices for their father. Then, each freshman is assigned to a father, keeping in mind their father is not always their best friend but someone to push them and ask for help from.
 
 ### Updating Lineage
 After the bidding process is completed and fathers/sons are assigned, then just update the lineage tree. There is a file called `/lineage/src/lineage.js`, this is where new memebers will be added, instruction are within the file. Then download the figma template file from the [links below](#links).
