@@ -68,5 +68,6 @@ After the bidding process is completed and fathers/sons are assigned, then just 
 
 <br>
 
-## Archive
-[Original TBT Tree Chart](https://drive.google.com/file/d/1L5NmEexqRSIvDGcGCOV5BmdiyZN79qXI/view)
+## Links
+- [Image Maker Figma](https://www.figma.com/community/file/1316214169331545204/tbt-template)
+- [Original TBT Tree Chart](https://drive.google.com/file/d/1L5NmEexqRSIvDGcGCOV5BmdiyZN79qXI/view)
