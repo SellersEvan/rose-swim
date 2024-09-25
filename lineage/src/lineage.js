@@ -9,7 +9,8 @@ const NEW_LINES = [
     "alex_yaung",
     "nate_weber",
     "pat_king",
-    "pierce_bartine"
+    "pierce_bartine",
+    "ryan_bowering"
 ];
 
 
@@ -98,6 +99,13 @@ const LINES = {
     "nathan_j_neppl": {
         "name": "Nathan J Neppl",
         "year": 2022,
+        "sons": [
+            "mitchell_cunningham"
+        ]
+    },
+    "mitchell_cunningham": {
+        "name": "Rhea Cunningham",
+        "year": 2023,
         "sons": []
     },
 
@@ -179,6 +187,13 @@ const LINES = {
     "carter_kirtz": {
         "name": "Carter Kirtz",
         "year": 2022,
+        "sons": [
+            "eric_sinclair"
+        ]
+    },
+    "eric_sinclair": {
+        "name": "Eric Sinclair",
+        "year": 2023,
         "sons": []
     },
 
@@ -262,8 +277,15 @@ const LINES = {
     "anthony_hoyt": {
         "name": "Anthony Hoyt",
         "year": 2022,
-        "sons": []
+        "sons": [
+            "logan_meyer"
+        ]
     },
+    "logan_meyer": {
+        "name": "Logan Meyer",
+        "year": 2023,
+        "sons": []
+    }
 
 
     // LINE 4
@@ -301,7 +323,9 @@ const LINES = {
         "year": 2021,
         "sons": [
             "blaise_swartwood",
-            "brian_beasley"
+            "brian_beasley",
+            "garett_walls",
+            "emre_gunay"
         ]
     },
     "zsolt_trukai": {
@@ -355,7 +379,9 @@ const LINES = {
     "aidan_carter": {
         "name": "Aidan Carter",
         "year": 2022,
-        "sons": []
+        "sons": [
+            "walter_kotlin"
+        ]
     },
     "charlie_su": {
         "name": "Charlie Su",
@@ -370,6 +396,21 @@ const LINES = {
     "brian_beasley": {
         "name": "Brian Beasley",
         "year": 2022,
+        "sons": []
+    },
+    "walter_kotlin": {
+        "name": "Walter Kotlin",
+        "year": 2023,
+        "sons": []
+    },
+    "garett_walls": {
+        "name": "Garett Walls",
+        "year": 2023,
+        "sons": []
+    },
+    "emre_gunay": {
+        "name": "Emre Gunay",
+        "year": 2023,
         "sons": []
     },
 
@@ -522,4 +563,19 @@ const LINES = {
         "year": 2018,
         "sons": []
     },
+
+    // LINE 7
+    "ryan_bowering": {
+        "name": "Bowser",
+        "year": 2023,
+        "sons": [
+            "parker_siddons"
+        ]
+    },
+    "parker_siddons": {
+        "name": "Parker Siddons",
+        "year": 2023,
+        "sons": []
+    },
+
 };
