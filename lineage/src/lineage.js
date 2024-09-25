@@ -566,7 +566,7 @@ const LINES = {
 
     // LINE 7
     "ryan_bowering": {
-        "name": "Bowser",
+        "name": "Ryan Bowering (Bowser)",
         "year": 2023,
         "sons": [
             "parker_siddons"
